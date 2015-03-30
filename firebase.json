@@ -1,0 +1,10 @@
+{
+  "firebase": "mn-style",
+  "public": "./client",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**",
+    "server/**"
+  ]
+}

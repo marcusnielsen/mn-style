@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head lang="en">
+
+  <meta charset="UTF-8">
+  <title>MN-Style</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/yeti/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bundle.css">
+</head>
+<body>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li ui-sref-active="active">
+      <a href="" ui-sref="all">
+        <span>
+          <i class="fa fa-check"></i> All
+        </span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a href="" ui-sref="components">
+        <span>
+          <i class="fa fa-check"></i> Components
+        </span>
+      </a>
+    </li>
+  </ul>
+
+
+  <ui-view></ui-view>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>

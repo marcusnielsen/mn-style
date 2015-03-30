@@ -1,4 +1,8 @@
+*.swp
+
 .idea
+
+dist
 
 # Logs
 logs
