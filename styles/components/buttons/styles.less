@@ -1,0 +1,44 @@
+@import "variables.less";
+@import "tools.less";
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  // TODO: .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  // TODO: .user-select(none);
+}
+
+.btn--primary {
+  .btn-variant(@btn-primary-color, @btn-primary-bg, @btn-primary-color);
+}
+
+.btn--secondary {
+  .btn-variant(@btn-secondary-color, @btn-secondary-bg, @btn-secondary-color);
+}
+
+// #Modifiers
+
+// ##Sizes
+
+.btn--lg {
+
+}
+
+.btn--sm {
+
+}
+
+// ## Widths
+
+.btn--block {
+  display: block;
+  width: 100%;
+}

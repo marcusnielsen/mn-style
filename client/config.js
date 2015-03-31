@@ -11,6 +11,10 @@ module.exports = function ($stateProvider, $urlRouterProvider) {
     .state('components', {
       url: '/components',
       template: fs.readFileSync(__dirname + '/ui-views/components/template.html')
+    })
+    .state('layouts', {
+      url: '/layouts',
+      template: fs.readFileSync(__dirname + '/ui-views/layouts/template.html')
     });
     /*.state('groups', {
       url: '/groups/:id',
