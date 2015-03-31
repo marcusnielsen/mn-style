@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var moduleName = 'styLayouts';
+var moduleName = 'styTypographies';
 var template = fs.readFileSync(__dirname + '/template.html');
 
 var directiveFn = function () {

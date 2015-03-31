@@ -7,6 +7,7 @@ angular.module('app', [
   // 'firebase',
   'ui.router',
   require('./objects/components/sty-buttons').name,
-  require('./objects/sty-layouts').name
+  require('./objects/sty-layouts').name,
+  require('./objects/sty-typographies').name
 ])
   .config(require('./config'))

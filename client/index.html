@@ -5,38 +5,47 @@
 
   <meta charset="UTF-8">
   <title>MN-Style</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/yeti/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="bundle.css">
 </head>
 <body>
-<div class="container">
-  <ul class="nav nav-pills">
-    <li ui-sref-active="active">
+<div>
+  <!-- TODO: Set active state (data-ui-state="active") via ui-router. -->
+  <ul class="list">
+    <li>
       <a href="" ui-sref="all">
         <span>
-          <i class="fa fa-check"></i> All
+          All
         </span>
       </a>
     </li>
-    <li ui-sref-active="active">
+    <li>
       <a href="" ui-sref="components">
         <span>
-          <i class="fa fa-check"></i> Components
+          Components
         </span>
       </a>
     </li>
-    <li ui-sref-active="active">
+    <li>
       <a href="" ui-sref="layouts">
         <span>
-          <i class="fa fa-check"></i> Layouts
+          Layouts
         </span>
       </a>
     </li>
   </ul>
 
+  <style>
+    .styles *:before {
+      content: attr(class);
+    }
 
-  <ui-view></ui-view>
+    .styles .ng-scope:before, .styles .ng-isolate-scope:before {
+      content: "";
+    }
+  </style>
+
+  <ui-view class="styles"></ui-view>
 </div>
 <script src="bundle.js"></script>
 </body>
