@@ -2,4 +2,18 @@
 
 body {
   background-color: @body-bg;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: @link-color;
+
+  &:hover,
+  &:focus,
+  &[data-ui-state="focus"]
+  &:active,
+  &[data-ui-state="active"] {
+    color: lighten(@link-color, 10%);
+  }
 }

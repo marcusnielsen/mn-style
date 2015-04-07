@@ -20,6 +20,8 @@
     "browserify": "^9.0.3",
     "connect-livereload": "^0.5.3",
     "express": "^4.12.3",
-    "mn-gulp": "^0.2.6"
+    "lodash": "^3.6.0",
+    "mn-gulp": "^0.2.6",
+    "path-browserify": "0.0.0"
   }
 }

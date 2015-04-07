@@ -1,12 +1,45 @@
+@import "variables";
+
 .list {
   list-style: none;
   padding-left: 0;
 }
 
 .list__item {
+  display: block;
 
+  & + & {
+    border-top: 1px solid @list-item-color;
+  }
+}
+
+.list__item--horizontal {
+  display: inline-block;
+
+  & + & {
+    border-left: 1px solid @list-item-color;
+  }
 }
 
 .list__item__link {
+  display: inline-block;
+  font-weight: @list-item-font-weight;
+  font-size: @list-item-font-size;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: @list-item-color;
+  background-color: @list-item-bg;
+  padding: @list-item-padding-vertical @list-item-padding-horizontal;
+  text-decoration: none;
 
+  &:hover,
+  &:active,
+  &[data-ui-state="active"]
+  &:focus,
+  &[data-ui-state="focus"] {
+    color: @list-item-color;
+    text-decoration: underline;
+    background-color: darken(@list-item-bg, 10%);
+  }
 }

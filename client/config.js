@@ -1,4 +1,4 @@
-var fs = require('fs')
+var fs = require('fs');
 
 module.exports = function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('all');
@@ -23,4 +23,4 @@ module.exports = function ($stateProvider, $urlRouterProvider) {
       controllerAs: 'vm'
     })*/
 
-}
+};

@@ -2,7 +2,7 @@ var gulp = require('gulp');
 
 var config = {
   css: {
-    lessSource: './styles/main.less',
+    lessSource: './styles/**/*.less',
     cssSource: './client/**/*.css',
     dest: './dist/client',
     sourcemaps: './maps'
